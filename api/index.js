@@ -22,11 +22,11 @@ const options = {
 }
 app.use(cors());
 
-app.get('/', (req, res)=> {
+app.get('/api', (req, res)=> {
     res.send('Hola, este es mi server en express para una tienda virtual de ropa femenina Matmoda');
 });
 
-app.get('/nueva-ruta', (req, res)=> {
+app.get('api/nueva-ruta', (req, res)=> {
     res.send('Hola, esta es una nueva ruta para una tienda virtual de ropa femenina');
 });
 
